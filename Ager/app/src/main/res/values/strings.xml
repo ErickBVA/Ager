@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Ager</string>
+    <string name="filter_button">Aplicar filtro</string>
+    <string name="camera_button">Tomar Foto</string>
+</resources>
