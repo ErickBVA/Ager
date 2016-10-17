@@ -2,4 +2,11 @@
     <string name="app_name">Ager</string>
     <string name="filter_button">Aplicar filtro</string>
     <string name="camera_button">Tomar Foto</string>
+    <string name="photo_area">Aqui se colocara la foto tomada</string>
+    <string name="share_button">Compartir</string>
+    <string name="directory_search_button">Buscar foto</string>
+
+    <string name="title_activity_fullscreen">FullscreenActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
 </resources>
