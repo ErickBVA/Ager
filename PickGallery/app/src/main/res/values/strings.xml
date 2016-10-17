@@ -1,5 +1,0 @@
-<resources>
-    <string name="app_name">PickGallery</string>
-    <string name="imgView">Aqui va la imagen</string>
-    <string name="load_picture">Cargar imagen</string>
-</resources>
