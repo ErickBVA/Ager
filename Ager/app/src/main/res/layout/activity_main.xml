@@ -23,8 +23,8 @@
             android:id="@+id/camera_button"
             android:layout_margin="2dp"
             android:background="@color/button_material_light"
-            android:layout_gravity="start|center_vertical"/>
-            <!--android:onClick="btnTakePhotoClicked"-->
+            android:layout_gravity="start|center_vertical"
+            android:onClick="btnTakePhotoClicked"/>
 
 
         <Button
