@@ -14,42 +14,83 @@
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/buttons_area">
+        android:id="@+id/buttons_image_area">
 
         <Button
-            android:layout_width="150dp"
+            android:layout_width="50dp"
             android:layout_height="wrap_content"
             android:text="@string/camera_button"
             android:id="@+id/camera_button"
             android:layout_margin="2dp"
-            android:background="#FF44DD"
-            android:layout_gravity="start|center_vertical" />
+            android:background="@color/button_material_light"
+            android:layout_gravity="start|center_vertical"/>
+            <!--android:onClick="btnTakePhotoClicked"-->
+
 
         <Button
-            android:layout_width="150dp"
+            android:layout_width="50dp"
             android:layout_height="wrap_content"
-            android:text="@string/filter_button"
+            android:text="@string/directory_search_button"
             android:layout_margin="2dp"
-            android:background="#FF44DD"
-            android:id="@+id/filter_applier"
-            android:layout_gravity="end|center_vertical" />
+            android:background="@color/button_material_light"
+            android:id="@+id/directory_search_button"
+            android:layout_gravity="end|center_vertical"
+            android:onClick="loadImageFromGallery"/>
 
     </FrameLayout>
 
     <View
         android:id="@+id/separator"
-        android:layout_below="@id/buttons_area"
+        android:layout_below="@id/buttons_image_area"
         android:layout_marginTop="10dp"
         android:layout_width="match_parent"
         android:layout_height="2dp"
         android:background="#000000"
         />
 
-    <View
-        android:id="@+id/images_area"
+    <ImageView
+        android:id="@+id/photo_area"
         android:layout_below="@id/separator"
         android:layout_marginTop="10dp"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="#E9FFE6"/>
+        android:layout_height="250dp"
+        android:background="#E9FFE6"
+        android:contentDescription="@string/photo_area" />
+
+    <View
+        android:id="@+id/separator2"
+        android:layout_below="@id/photo_area"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#000000"
+        />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonsFunctions_area"
+        android:layout_below="@id/separator2"
+        android:layout_marginTop="10dp">
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="@string/share_button"
+            android:id="@+id/share_button"
+            android:layout_margin="2dp"
+            android:background="@color/button_material_light"
+            android:layout_gravity="start|center_vertical"  />
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/filter_button"
+            android:layout_margin="2dp"
+            android:background="@color/button_material_light"
+            android:id="@+id/filter_applier"
+            android:layout_gravity="end|center_vertical" />
+
+    </FrameLayout>
+
 </RelativeLayout>
