@@ -15,7 +15,7 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
     private static int RESULT_LOAD_IMG = 1;
     public static final int CAMERA_REQUEST = 2;
-    String imgDecodableString;
+    private String imgDecodablString;
     private ImageView imgView;
 
     @Override
@@ -51,10 +51,10 @@ public class MainActivity extends AppCompatActivity {
                 cursor.moveToFirst();
 
                 int columnIndex = cursor.getColumnIndex(filePathColumn[0]);
-                imgDecodableString = cursor.getString(columnIndex);
+                imgDecodablString = cursor.getString(columnIndex);
                 cursor.close();
 
-                imgView.setImageBitmap(BitmapFactory.decodeFile(imgDecodableString));
+                imgView.setImageBitmap(BitmapFactory.decodeFile(imgDecodablString));
             }catch(Exception e){
                 e.printStackTrace();
                 Toast.makeText(this, "Unable to open image", Toast.LENGTH_LONG).show();
